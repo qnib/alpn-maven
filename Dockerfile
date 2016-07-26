@@ -6,4 +6,4 @@ ENV M2_HOME=/usr/lib/mvn \
 RUN wget -qO - http://ftp.fau.de/apache/maven/maven-3/${MVN_VER}/binaries/apache-maven-${MVN_VER}-bin.tar.gz | tar xfz - -C /usr/lib/ \
  && mv /usr/lib/apache-maven-${MVN_VER} /usr/lib/mvn/
 
-ENV PATH $PATH:$$JAVA_HOME:$JAVA:$M2_HOME:$M2
+ENV PATH $PATH:$JAVA_HOME/bin:$JAVA:$M2_HOME:$M2
